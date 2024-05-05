@@ -1,0 +1,148 @@
+:root{
+  --clr-Red: hsl(0, 78%, 62%);
+  --clr-Cyan: hsl(180, 62%, 55%);
+  --clr-Orange: hsl(34, 97%, 64%);
+  --clr-Blue: hsl(212, 86%, 64%);
+
+
+  --clr-VeryDarkBlue: hsl(234, 12%, 34%);
+  --clr-GrayishBlue: hsl(229, 6%, 66%);
+  --clr-VeryLightGray: hsl(0, 0%, 98%);
+
+  --ff-base: "Poppins", sans-serif;
+
+  --fs-small: 0.875rem;
+  --fs-base: 0.938rem;
+  --fs-big: 2.25rem;
+
+  --fw-small: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;  
+}
+
+body{
+ display: grid;
+ font-family: var(--ff-base);
+ font-size: var(--fs-base);
+ font-weight: var(--fw-normal);
+ background-color: var(--clr-VeryLightGray);
+ color: var(--clr-GrayishBlue);
+}
+
+header{
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.main-paragraph{
+ max-width: 545px;
+}
+
+
+.wraper{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.util-flex{
+  display: grid;
+  gap: 2rem;
+}
+
+.feature{
+  display: inline-block;  
+  width: 350px;
+  height: 250px;
+  padding: 2rem;
+  box-shadow: 0px 6px 15px 7px rgba(76,78,97,0.1);
+  border-radius: 0.5rem;
+  font-size: var(--fs-small);  
+}
+
+.feature-icon{
+ float: right;
+ margin-top: 2rem;
+}
+
+.feature-supervisor{
+  border-top: 4px solid var(--clr-Cyan);  
+}
+
+.feature-supervisor .feature-icon{
+  content: url(../images/icon-supervisor.svg);
+}
+
+.feature-team-builde{
+  border-top: 4px solid var(--clr-Red);
+}
+
+.feature-team-builde .feature-icon{
+  content: url(../images/icon-team-builder.svg);
+}
+
+.feature-karma{
+  border-top: 4px solid var(--clr-Orange);
+}
+
+.feature-karma .feature-icon{
+  content: url(../images/icon-karma.svg);
+}
+
+.feature-calculator{
+  border-top: 4px solid var(--clr-Blue);
+}
+
+.feature-calculator .feature-icon{
+  content: url(../images/icon-calculator.svg);
+}
+
+h1{
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+}
+
+h2{
+  font-size: var(--fs-big);
+  font-weight: var(--fw-small);
+}
+
+.feature h3{
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3{
+  color: var(--clr-VeryDarkBlue);
+}
+
+
+@media (width < 600px) {
+
+  
+  .wraper{
+    display: grid;
+  }
+
+  h1{
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+  }
+  
+  h2{
+    font-size: 1.75rem;
+    font-weight: var(--fw-small);
+  }
+
+  .main-paragraph{
+    max-width: 400px;
+    padding: 1rem;
+   }
+
+}
