@@ -75,32 +75,16 @@ header{
   border-top: 4px solid var(--clr-Cyan);  
 }
 
-.feature-supervisor .feature-icon{
-  content: url(../images/icon-supervisor.svg);
-}
-
 .feature-team-builde{
   border-top: 4px solid var(--clr-Red);
-}
-
-.feature-team-builde .feature-icon{
-  content: url(../images/icon-team-builder.svg);
 }
 
 .feature-karma{
   border-top: 4px solid var(--clr-Orange);
 }
 
-.feature-karma .feature-icon{
-  content: url(../images/icon-karma.svg);
-}
-
 .feature-calculator{
   border-top: 4px solid var(--clr-Blue);
-}
-
-.feature-calculator .feature-icon{
-  content: url(../images/icon-calculator.svg);
 }
 
 h1{
